@@ -1,0 +1,161 @@
+header {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0,0,0,0.8);
+}
+header .center {
+  width: 1226px;
+  height: 100%;
+}
+header .center .left {
+  float: left;
+  width: 70%;
+  height: 100%;
+}
+header .center .left li {
+  float: left;
+  font-size: 12px;
+  height: 14px;
+  height: 14px;
+  line-height: 14px;
+  margin-top: 13px;
+  border-right: 1px solid #b0b0b0;
+  padding: 0 8px;
+}
+header .center .left li:last-child {
+  border-right: 0;
+}
+header .center .left li a {
+  color: #b0b0b0;
+}
+header .center .right {
+  float: right;
+  width: 20%;
+  height: 40px;
+}
+header .center .right ul li {
+  float: left;
+  font-size: 12px;
+  height: 14px;
+  height: 14px;
+  line-height: 14px;
+  margin-top: 13px;
+  border-right: 1px solid #b0b0b0;
+  padding: 0 8px;
+}
+header .center .right ul li:last-child {
+  border-right: 0;
+}
+header .center .right ul li a {
+  color: #b0b0b0;
+}
+header .center .right .shopcar {
+  float: right;
+  width: 120px;
+  height: 41px;
+  background-color: #ff6700;
+  color: #fff;
+  text-align: center;
+  height: 41px;
+  line-height: 41px;
+  font-size: 12px;
+  margin-right: 20px;
+}
+content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+content > * {
+  width: 1226px;
+}
+content nav {
+  height: 100px;
+}
+content nav > * {
+  float: left;
+}
+content nav > a {
+  display: block;
+  height: 100%;
+}
+content nav .logo {
+  width: 50px;
+  background: url("../img/logo_top.png") no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+content nav .gif {
+  width: 180px;
+  background: url("../img/yyymix.gif") no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+content nav > ul {
+  display: flex;
+  height: 100%;
+}
+content nav > ul > li {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  font-size: 16px;
+}
+content nav .search {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  float: right;
+}
+content nav .search .text {
+  box-sizing: border-box;
+  width: 250px;
+  height: 50px;
+  border: 1px solid #ccc;
+}
+content nav .search .button {
+  border: 1px solid #ccc;
+  width: 50px;
+  height: 50px;
+}
+content .banner {
+  height: 460px;
+}
+content .banner .f1 {
+  float: left;
+}
+content .banner .b_left {
+  width: 234px;
+  height: 100%;
+  float: left;
+  background-color: #0c0c13;
+}
+content .banner .b_left > ul {
+  margin-top: 30px;
+}
+content .banner .b_left > ul > li {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 30px;
+  font-size: 14px;
+}
+content .banner .b_left > ul > li:hover {
+  background-color: #ff6700;
+}
+content .banner .b_left > ul > li:hover .pop {
+  display: flex;
+}
+content .banner .b_left > ul > li a {
+  color: #fff;
+  margin-left: 10px;
+}
+content .banner .swiper-container {
+  width: 992px;
+  height: 100%;
+}
+content .banner .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}

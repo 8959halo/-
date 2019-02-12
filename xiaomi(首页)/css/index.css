@@ -1,0 +1,71 @@
+.header {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.header .center {
+    width: 1226px;
+    height: 100%;
+}
+
+.header .left {
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+.header .center .left li {
+    float: left;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 13px;
+    border-right: 1px solid #b0b0b0;
+    padding: 0 8px;
+}
+
+.header .center .left li:last-child {
+    border-right: 0;
+}
+
+.header .center .left li a {
+    color: #b0b0b0;
+
+}
+
+.header .center .right {
+    float: right;
+    width: 20%;
+    height: 40px;
+}
+
+.header .center .right ul li {
+    float: left;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 13px;
+    border-right: 1px solid #b0b0b0;
+    padding: 0 8px;
+}
+
+.header .center .right ul li:last-child {
+    border-right: 0;
+}
+
+.header .center .right ul li a {
+    color: #b0b0b0;
+}
+
+.header .center .right .shopcar {
+    float: right;
+    width: 120px;
+    height: 41px;
+    background-color: #ff6700;
+    color: #fff;
+    text-align: center;
+    line-height: 41px;
+    font-size: 12px;
+    margin-right: 20px;
+}

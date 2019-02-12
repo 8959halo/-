@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+        .swiper-container{
+            width: 60%;
+            height: 200px;
+            margin: 0 auto;
+            border: 1px solid ;
+        }
+        img{
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="img/banner1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/banner2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/banner3.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper=new Swiper('.swiper-container',{
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    })
+</script>
+</body>
+</html>

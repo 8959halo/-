@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'myicon';
+  src:  url('../fonts/myicon.eot?lyg00z');
+  src:  url('../fonts/myicon.eot?lyg00z#iefix') format('embedded-opentype'),
+    url('../fonts/myicon.ttf?lyg00z') format('truetype'),
+    url('../fonts/myicon.woff?lyg00z') format('woff'),
+    url('../fonts/myicon.svg?lyg00z#myicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'myicon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e65c";
+}
+.icon-cart:before {
+  content: "\e6af";
+}
+.icon-search1:before {
+  content: "\e600";
+}
+.icon-jiantou_xiangxia:before {
+  content: "\eb0a";
+}
+.icon-jiantou_xiangshang:before {
+  content: "\eb0b";
+}
+.icon-pacman:before {
+  content: "\e916";
+}
+.icon-spades:before {
+  content: "\e917";
+}
+.icon-clubs:before {
+  content: "\e918";
+}
+.icon-diamonds:before {
+  content: "\e919";
+}

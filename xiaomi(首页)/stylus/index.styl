@@ -1,0 +1,152 @@
+@import "mixins.styl"
+
+$height = 40px
+
+header
+  width 100%
+  height $height
+  background-color rgba(0, 0, 0, 0.8)
+  .center
+    width 1226px
+    height 100%
+    .left
+      float left
+      width 70%
+      height 100%
+      li
+        float left
+        font-size 12px
+        height 14px
+        line-height 14px
+        margin-top 13px
+        border-right 1px solid #b0b0b0
+        padding 0 8px
+        &:last-child
+          border-right: 0
+        a
+          color: #b0b0b0
+    .right
+      float right
+      width 20%
+      height 40px
+      ul
+        li
+          float left
+          font-size 12px
+          height 14px
+          line-height 14px
+          margin-top 13px
+          border-right 1px solid #b0b0b0
+          padding 0 8px
+          &:last-child
+            border-right: 0;
+          a
+            color #b0b0b0
+      .shopcar
+        float right
+        width 120px
+        height 41px
+        background-color #ff6700
+        color #fff
+        text-align center
+        line-height 41px
+        font-size 12px
+        margin-right 20px
+
+content
+  display flex
+  justify-content center
+  flex-wrap wrap
+  width 100%
+  & > * {
+    width 1226px
+  }
+  nav
+    height 100px
+    & > * {
+      float: left
+    }
+    & > a {
+      display block
+      height 100%
+    }
+    .logo
+      width 50px
+      background url("../img/logo_top.png") no-repeat
+      background-position center
+      background-size 100%
+    .gif
+      width 180px
+      background url("../img/yyymix.gif") no-repeat;
+      background-position center
+      background-size: 100%;
+    & > ul {
+      display flex
+      height 100%
+      & > li {
+        display flex
+        align-items center
+        margin 0 10px
+        font-size 16px
+      }
+    }
+    .search
+      display flex
+      align-items center
+      height 100%
+      float right
+      .text
+        box-sizing border-box
+        width 250px
+        height 50px
+        border 1px solid #ccc
+      .button
+        border 1px solid #ccc
+        width 50px
+        height 50px
+  .banner
+    height 460px
+    .f1
+      float left
+    .b_left
+      width 234px
+      height 100%
+      float left
+      background-color #0c0c13
+
+      & > ul {
+        margin-top 30px
+        & > li {
+          display flex
+          align-items center
+          height 40px
+          padding 0 30px
+          font-size 14px
+          &:hover {
+            background-color: #ff6700;
+            .pop {
+              display: flex;
+            }
+          }
+          a {
+            color: #fff;
+            margin-left: 10px;
+          .pop{
+
+          }
+          }
+        }
+      }
+
+    .swiper-container {
+      width: 992px;
+      height: 100%;
+      .swiper-wrapper {
+        .swiper-slide {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
