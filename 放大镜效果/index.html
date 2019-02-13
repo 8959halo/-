@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="small">
+        <img src="./img/small.jpg" >
+        <div class="smallBox"></div>
+        <div class="hide"></div>
+    </div>
+    <div class="big">
+        <img class="bigImg" src="./img/big.jpg" >
+    </div>
+</div>
+<script>
+    let small=document.querySelector('.small');
+    let smallBox=document.querySelector('.smallBox');
+    let hide = document.querySelector('.hide')
+    let bigImg=document.querySelector('.big img');
+    let big=document.querySelector('.big');
+    let sw=parseInt(getComputedStyle(smallBox)['width']);
+    let w=parseInt(getComputedStyle(small)['width']);
+    let bw=parseInt(getComputedStyle(big)['width']);
+    let biw=parseInt(getComputedStyle(bigImg)['width']);
+    let maxLeft=w-sw;
+    let maxTop=maxLeft;
+    let scale=(biw-bw)/(w-sw);
+
+    hide.onmousemove=function(event){
+        let left=event.offsetX-sw/2;
+        let top=event.offsetY-sw/2;
+        left=left<=0?0:left;
+        top=top<=0?0:top;
+        left=left>=maxLeft?maxLeft:left;
+        top=top>=maxTop?maxTop:top;
+        smallBox.style.left=left+"px";
+        smallBox.style.top=top+"px";
+        bigImg.style.left=-left*scale+"px";
+        bigImg.style.top=-top*scale+"px";
+    }
+
+</script>
+</body>
+
+</html>
